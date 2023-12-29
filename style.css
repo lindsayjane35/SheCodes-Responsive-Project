@@ -95,7 +95,10 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 765px) {
+  .home-photo {
+    display: none;
+  }
   .project-link {
     display: block;
     text-align: center;
