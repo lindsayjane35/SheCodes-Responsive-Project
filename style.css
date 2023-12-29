@@ -3,10 +3,8 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 body {
-  margin: 60px auto;
-  max-width: 800px;
+  margin: 100px 0;
 }
 .container {
   margin-bottom: 70px;
