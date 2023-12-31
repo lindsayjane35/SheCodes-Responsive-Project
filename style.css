@@ -15,6 +15,7 @@ body {
 }
 a {
   font-family: var(--seconday-font);
+  text-decoration: none !important;
 }
 h1,
 h2,
@@ -113,4 +114,21 @@ p {
     text-align: center;
     margin: 0 auto;
   }
+}
+footer {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 200px;
+  text-decoration: none !important;
+}
+i {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 30px;
+  opacity: 55%;
+}
+i:hover {
+  cursor: pointer;
+  opacity: 80%;
 }
