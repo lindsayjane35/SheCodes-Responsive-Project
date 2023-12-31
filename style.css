@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #ca9db9;
+  --primary-dark-color: rgb(90 62 90);
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --primary-font: "Prosto One", sans-serif;
@@ -7,7 +8,7 @@
 }
 body {
   margin: 100px 0;
-  background-color: rgb(90 62 90) !important;
+  background-color: var(--primary-dark-color) !important;
   color: var(--secondary-color) !important;
 }
 .container {
@@ -16,6 +17,17 @@ body {
 a {
   font-family: var(--seconday-font);
   text-decoration: none !important;
+  font-weight: 900;
+}
+.hero {
+  background-color: var(--primary-color);
+  color: var(--primary-dark-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 5px solid rgb(90, 62, 90, 0.2);
+}
+.hero a {
+  box-shadow: var(--box-shadow);
 }
 h1,
 h2,
@@ -30,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px !important;
+  font-size: 30px !important;
 }
 
 h3 {
@@ -50,7 +62,7 @@ p {
 
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+
   justify-content: center;
 }
 
@@ -72,8 +84,8 @@ p {
 }
 
 .about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--primary-dark-color);
+  border: 2px solid var(--primary-dark-color);
 }
 
 .homepage-link {
@@ -127,6 +139,7 @@ i {
   color: var(--secondary-color);
   font-size: 30px;
   opacity: 55%;
+  padding: 15px;
 }
 i:hover {
   cursor: pointer;
