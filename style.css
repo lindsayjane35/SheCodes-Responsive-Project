@@ -138,6 +138,11 @@ p {
     margin: 0 auto;
   }
 }
+.headshot {
+  width: 300px;
+  border-radius: 50px;
+  margin-top: 30px !important;
+}
 footer {
   display: block;
   margin: 0 auto;
