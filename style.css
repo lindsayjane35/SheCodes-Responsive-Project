@@ -24,7 +24,8 @@ a {
   color: var(--primary-dark-color);
   padding: 20px;
   margin-bottom: 20px;
-  border: 5px solid rgb(90, 62, 90, 0.2);
+  border-top: 5px solid rgb(90, 62, 90, 0.2);
+  border-bottom: 5px solid rgb(90, 62, 90, 0.2);
 }
 .hero a {
   box-shadow: var(--box-shadow);
