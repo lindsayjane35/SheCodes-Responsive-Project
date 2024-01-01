@@ -76,12 +76,16 @@ p {
 }
 
 .primary-link {
+  display: block;
+  margin: 0 auto;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
+  text-align: center;
+  width: 200px;
 }
 
 .about-link {
@@ -119,7 +123,10 @@ p {
 }
 
 .home-photo {
-  width: 300px;
+  display: block;
+  margin: 0 auto;
+  width: 380px;
+  margin-top: 20px;
 }
 @media (max-width: 765px) {
   .home-photo {
