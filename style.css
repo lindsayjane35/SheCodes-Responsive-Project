@@ -118,6 +118,9 @@ p {
   text-decoration: underline;
 }
 
+.home-photo {
+  width: 300px;
+}
 @media (max-width: 765px) {
   .home-photo {
     display: none;
