@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #ca9db9;
-  --primary-dark-color: rgb(90 62 90);
+  --primary-color: #d5cbd1;
+  --primary-dark-color: rgb(39 25 39);
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --primary-font: "Prosto One", sans-serif;
@@ -39,7 +39,7 @@ h3 {
 }
 
 h1 {
-  font-size: 60px !important;
+  font-size: 80px !important;
 }
 
 h2 {
@@ -80,7 +80,7 @@ p {
   margin: 0 auto;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--primary-dark-color);
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
@@ -99,27 +99,8 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
 p {
   background: none;
-}
-.email-link:hover {
-  text-decoration: underline;
 }
 
 .home-photo {
@@ -138,11 +119,12 @@ p {
     margin: 0 auto;
   }
 }
-.headshot {
-  width: 300px;
-  border-radius: 50px;
-  margin-top: 30px !important;
+@media (max-width: 400px) {
+  h1 {
+    font-size: 40px !important;
+  }
 }
+
 footer {
   display: block;
   margin: 0 auto;
@@ -160,4 +142,39 @@ i {
 i:hover {
   cursor: pointer;
   opacity: 80%;
+}
+.about-title {
+  margin-top: 30px;
+}
+.headshot {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.about-paragraph {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraph p {
+  margin: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 30px;
+}
+#contact {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
 }
