@@ -178,3 +178,15 @@ i:hover {
 .email-link:hover {
   text-decoration: underline;
 }
+.projects-container {
+  margin: 40px;
+}
+.project-titles {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 220px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
