@@ -132,6 +132,28 @@ footer {
   max-width: 200px;
   text-decoration: none !important;
 }
+.contact-container {
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 40px;
+  color: var(--primary-dark-color);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+}
+.contact-me {
+  background-color: var(--primary-dark-color);
+  color: var(--primary-color);
+  border-radius: 40px;
+  border: none;
+  padding: 5px;
+}
+.contact-me:hover {
+  cursor: pointer;
+  background-color: var(--primary-dark-color);
+  color: var(--primary-color);
+}
 i {
   display: block;
   color: var(--secondary-color);
