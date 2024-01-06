@@ -30,6 +30,25 @@ a {
 .hero a {
   box-shadow: var(--box-shadow);
 }
+.btn-branding {
+  margin: 20px;
+  border: none;
+  border-radius: 30px !important;
+  padding: 20px 15px;
+  text-decoration: none;
+  box-shadow: var(--box-shadow);
+  background-color: var(--secondary-color) !important;
+  padding: 20px 15px;
+}
+.btn-branding:hover {
+  cursor: pointer;
+  color: var(--primary-dark-color) !important;
+  font-weight: 700;
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+}
 h1,
 h2,
 h3 {
@@ -59,33 +78,6 @@ p {
   line-height: 1.5;
   text-align: center;
   font-family: "Poiret One", sans-serif;
-}
-
-.navigation-links {
-  display: flex;
-
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.primary-link {
-  display: block;
-  margin: 0 auto;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: var(--primary-dark-color);
-  padding: 20px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-align: center;
-  width: 200px;
 }
 
 .about-link {
@@ -129,37 +121,33 @@ footer {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 200px;
+  text-align: center;
   text-decoration: none !important;
+  opacity: 80%;
 }
 .contact-container {
   text-align: center;
-  background-color: rgb(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 40px;
-  color: var(--primary-dark-color);
+  color: var(--primary-color);
   margin-bottom: 10px;
   font-weight: 700;
+  font-size: 30px;
   font-family: var(--seconday-font);
 }
-.contact-me {
-  background-color: var(--primary-dark-color);
-  color: var(--primary-color);
-  border-radius: 40px;
-  border: none;
-  padding: 5px;
-}
-.contact-me:hover {
-  cursor: pointer;
-  background-color: var(--primary-dark-color);
-  color: var(--primary-color);
-}
-i {
+
+i,
+.email-link {
   display: block;
   color: var(--secondary-color);
   font-size: 30px;
   opacity: 55%;
   padding: 15px;
+}
+.email-link:hover {
+  cursor: pointer;
+  opacity: 100%;
+  text-decoration: underline !important;
 }
 i:hover {
   cursor: pointer;
