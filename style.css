@@ -18,6 +18,7 @@ a {
   font-family: var(--seconday-font);
   text-decoration: none !important;
   font-weight: 900;
+  color: var(--primary-color) !important;
 }
 .hero {
   background-color: var(--primary-color);
@@ -31,7 +32,7 @@ a {
   box-shadow: var(--box-shadow);
 }
 .btn-branding {
-  margin: 20px;
+  margin: 10px;
   border: none;
   border-radius: 30px !important;
   padding: 20px 15px;
@@ -39,11 +40,14 @@ a {
   box-shadow: var(--box-shadow);
   background-color: var(--secondary-color) !important;
   padding: 20px 15px;
+  font-family: var(--seconday-font) !important;
+  font-size: 20px !important;
+  color: var(--primary-dark-color) !important;
 }
 .btn-branding:hover {
   cursor: pointer;
-  color: var(--primary-dark-color) !important;
-  font-weight: 700;
+
+  font-weight: 900 !important;
 }
 .navigation-links {
   display: flex;
@@ -117,6 +121,16 @@ p {
   }
 }
 
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 40px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 30px;
+
+  font-family: var(--primary-font);
+}
 footer {
   display: block;
   margin: 0 auto;
@@ -124,16 +138,6 @@ footer {
   text-align: center;
   text-decoration: none !important;
   opacity: 80%;
-}
-.contact-container {
-  text-align: center;
-  padding: 20px;
-  border-radius: 40px;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 30px;
-  font-family: var(--seconday-font);
 }
 
 i,
