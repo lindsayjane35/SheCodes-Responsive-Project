@@ -5,19 +5,21 @@
   --background-accent-color: rgb(107 97 107);
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --primary-font: "Prosto One", sans-serif;
-  --seconday-font: "Poiret One", sans-serif;
+  --secondary-font: "Poiret One", sans-serif;
 }
 body {
   margin: 100px 0;
   background-color: var(--primary-dark-color) !important;
   color: var(--secondary-color) !important;
 }
-
+.navbar-brand {
+  font-family: "Tourney", sans-serif;
+}
 .container {
   margin-bottom: 70px;
 }
 a {
-  font-family: var(--seconday-font);
+  font-family: var(--secondary-font);
   text-decoration: none !important;
   font-weight: 900;
   color: var(--primary-color) !important;
@@ -27,7 +29,7 @@ a {
   color: var(--secondary-color);
   margin: 95px 50px 25px 50px;
   padding: 20px;
-  border: 4px dotted var(--secondary-color);
+  border: 4px dotted rgb(245 242 254 / 30%);
   border-radius: 30px;
 }
 .hero a {
@@ -43,7 +45,7 @@ a {
   box-shadow: var(--box-shadow);
   background-color: var(--secondary-color) !important;
   padding: 20px 15px;
-  font-family: var(--seconday-font) !important;
+  font-family: var(--secondary-font) !important;
   font-size: 20px !important;
   color: var(--primary-dark-color) !important;
 }
@@ -130,7 +132,7 @@ footer {
   text-align: center;
   text-decoration: none !important;
   font-size: 20px !important;
-  font-family: var(--seconday-font);
+  font-family: var(--secondary-font);
   color: var(--primary-color);
 }
 
