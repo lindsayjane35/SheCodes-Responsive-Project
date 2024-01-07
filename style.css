@@ -184,6 +184,15 @@ i:hover {
   h1 {
     font-size: 40px !important;
   }
+  .connect-links {
+    font-size: 27px !important;
+  }
+  .work-inquiry {
+    font-size: 35px !important;
+  }
+  footer {
+    font-size: 15px !important;
+  }
 }
 @media (max-width: 615px) {
   .about-section {
