@@ -129,7 +129,9 @@ footer {
   margin-bottom: 30px;
   text-align: center;
   text-decoration: none !important;
-  opacity: 80%;
+  font-size: 20px !important;
+  font-family: var(--seconday-font);
+  color: var(--primary-color);
 }
 
 i,
@@ -146,8 +148,11 @@ i,
   text-decoration: underline !important;
 }
 i:hover {
-  cursor: pointer;
-  opacity: 80%;
+  opacity: 100%;
+}
+
+.github-footer:hover {
+  text-decoration: underline !important;
 }
 .about-section {
   display: flex;
@@ -217,12 +222,31 @@ i:hover {
 .projects-container {
   margin: 40px;
 }
-.project-titles {
-  display: block;
-  margin: 0 auto;
+
+.work-inquiry {
   text-align: center;
-  width: 220px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 7px;
-  margin-bottom: 5px;
+  padding: 13px;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 45px;
+  font-family: var(--primary-font);
+}
+.connect-links {
+  font-size: 35px;
+  color: var(--secondary-color) !important;
+  text-align: center !important;
+  margin: 25px;
+}
+.connect-email,
+.connect-linkedin,
+.connect-github {
+  margin-bottom: 20px;
+  opacity: 60%;
+}
+.connect-email:hover,
+.connect-linkedin:hover,
+.connect-github:hover {
+  text-decoration: underline !important;
+  opacity: 100% !important;
 }
