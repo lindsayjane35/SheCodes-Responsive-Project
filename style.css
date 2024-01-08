@@ -15,9 +15,6 @@ body {
 .navbar-brand {
   font-family: "Tourney", sans-serif;
 }
-.container {
-  margin-bottom: 70px;
-}
 a {
   font-family: var(--secondary-font);
   text-decoration: none !important;
@@ -27,14 +24,15 @@ a {
 .hero,
 .about-container {
   color: var(--secondary-color);
-  margin: 95px 50px 25px 50px;
-  padding: 20px;
   border: 4px dotted rgb(245 242 254 / 30%);
   border-radius: 30px;
+  margin: 95px 60px 40px 60px;
 }
 .hero a {
   box-shadow: var(--box-shadow);
+  margin: 95px 50px 25px 50px;
 }
+
 .btn-branding {
   display: block !important;
   margin: 10 auto !important;
@@ -53,6 +51,12 @@ a {
   cursor: pointer;
   font-weight: 900 !important;
 }
+
+.launch-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
 .fixed-width {
   display: block;
   margin: 0 auto;
@@ -61,6 +65,10 @@ a {
 .navigation-links {
   display: flex;
   justify-content: center;
+  margin: 20px;
+}
+.navigation-links .btn-branding {
+  margin: 2px;
 }
 h1,
 h2,
@@ -71,15 +79,15 @@ h3 {
 }
 
 h1 {
-  font-size: 70px !important;
+  font-size: 60px !important;
 }
 
 h2 {
-  font-size: 30px !important;
+  font-size: 35px !important;
 }
 
 h3 {
-  font-size: 24px !important;
+  font-size: 25px !important;
   opacity: 0.7;
 }
 
@@ -107,12 +115,29 @@ p {
 p {
   background: none;
 }
-
+.home-projects-container {
+  display: flex;
+  justify-content: center;
+}
+.weather-app {
+  width: 500px;
+  margin: 10px;
+}
+.alice-in-wonderland {
+  width: 500px;
+  margin: 10px;
+}
+.home-projects-container p {
+  max-width: 500px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 .home-photo {
-  display: block;
-  margin: 0 auto;
-  width: 380px;
-  margin-top: 20px;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 460px;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .contact-container {
@@ -159,32 +184,38 @@ i:hover {
 .about-section {
   display: flex;
   justify-content: center;
-  margin-top: 95px;
+  margin: 95px 140px 20px 140px;
 }
 .about-container {
   display: block !important;
   margin: 0 auto !important;
-  margin-right: 10px;
+  max-width: 475px;
+  padding: 35px 10px 35px 10px;
+}
+.about-paragraph {
+  margin: 50px;
+  border: 2px solid rgb(245 242 254 / 30%);
+  border-radius: 30px;
+}
+.about-paragraph p {
+  line-height: 1.7;
+  font-size: 21px;
 }
 .headshot {
-  margin-left: 10px;
   width: 250px;
   height: 250px;
   border-radius: 50px;
 }
-@media (max-width: 765px) {
-  .home-photo {
-    display: none;
-  }
-  .project-link {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
+
 @media (max-width: 430px) {
   h1 {
-    font-size: 40px !important;
+    font-size: 45px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 22px;
   }
   .connect-links {
     font-size: 27px !important;
@@ -195,7 +226,25 @@ i:hover {
   footer {
     font-size: 15px !important;
   }
+  .home-projects-container {
+    display: grid !important;
+    margin: 0 auto !important;
+    grid-template-columns: 1fr;
+    max-width: 200px;
+  }
+  .weather-app {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 350px;
+  }
+  .alice-in-wonderland {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 350px;
+    margin-top: 50px !important;
+  }
 }
+
 @media (max-width: 615px) {
   .about-section {
     display: grid !important;
@@ -206,14 +255,33 @@ i:hover {
   }
   .headshot {
     display: block !important;
-    margin: 0 auto;
+    margin: 0 auto !important;
+  }
+  .home-photo {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 200px;
   }
 }
 
-.about-paragraph {
-  margin: 10px;
-  border: 2px solid var(--secondary-color);
-  border-radius: 30px;
+@media (max-width: 765px) {
+  .home-photo {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 250px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .headshot {
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 20px !important;
+  }
+  .home-photo {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 320px !important;
+  }
 }
 #contact {
   margin-top: 30px;
@@ -233,7 +301,13 @@ i:hover {
 .projects-container {
   margin: 40px;
 }
-
+.projects-header,
+.contact-header {
+  margin-top: 95px;
+}
+.projects-photo img {
+  max-width: 500px !important;
+}
 .work-inquiry {
   text-align: center;
   padding: 13px;
