@@ -331,13 +331,15 @@ i:hover {
 }
 .connect-email,
 .connect-linkedin,
-.connect-github {
+.connect-github,
+.connect-resume {
   margin-bottom: 20px;
   opacity: 60%;
 }
 .connect-email:hover,
 .connect-linkedin:hover,
-.connect-github:hover {
+.connect-github:hover,
+.connect-resume:hover {
   text-decoration: underline !important;
   opacity: 100% !important;
 }
