@@ -100,6 +100,7 @@ h2 {
 h3 {
   font-size: 25px !important;
   opacity: 0.7;
+  margin-top: 10px !important;
 }
 
 p {
@@ -147,10 +148,11 @@ p {
   display: block !important;
   margin: 0 auto !important;
   max-width: 460px;
-  margin: 20px;
   border-radius: 20px;
 }
-
+.home-photo:hover {
+  border: 1px solid var(--secondary-color);
+}
 .contact-container {
   text-align: center;
   padding: 20px;
@@ -268,16 +270,12 @@ i:hover {
     margin: 0 auto !important;
   }
   .home-photo {
-    display: block !important;
-    margin: 0 auto !important;
     width: 200px;
   }
 }
 
 @media (max-width: 765px) {
   .home-photo {
-    display: block !important;
-    margin: 0 auto !important;
     width: 250px !important;
   }
 }
@@ -288,8 +286,6 @@ i:hover {
     margin-top: 20px !important;
   }
   .home-photo {
-    display: block !important;
-    margin: 0 auto !important;
     width: 320px !important;
   }
 }
